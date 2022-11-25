@@ -1,0 +1,21 @@
+{
+  "name": "mahelbir/ipv6gen",
+  "description": "Random IPv6 Address Generator with Subnet",
+  "type": "library",
+  "homepage": "https://github.com/mahelbir/ipv6gen",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mahmuthan Elbir",
+      "email": "me@mahmuthanelbir.com.tr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Mahelbir\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.1"
+  }
+}

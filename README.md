@@ -3,7 +3,9 @@
 [![Latest version][ico-version]][link-packagist]
 [![Software License][ico-license]][link-license]
 
-Ipv6Gen is a random IPv6 address generator with subnet.
+Ipv6Gen is a random IPv6 address generator by subnet.
+
+This tool is tailored for network testing and configuration, offering a straightforward solution for generating subnet-specific IPv6 addresses efficiently.
 
 ## Requirements
 
@@ -23,17 +25,21 @@ Although it's recommended to use Composer, you can actually include files anyway
 ## Usage
 
 ```php
-$generator = new \Mahelbir\Ipv6Gen(['xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx', 64]);
-echo $generator->getIP(); # xxxx:xxxx:xxxx:xxxx:371f:c0c7:b89e:d500
+$generator = new \Mahelbir\Ipv6Gen('ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff', 64);
+echo $generator->getIP(); # ffff:ffff:ffff:ffff:b7e4:e549:5173:484d
 
 
-$generator = new \Mahelbir\Ipv6Gen(['xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx', 32]);
+$generator = new \Mahelbir\Ipv6Gen('ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff', 32);
 print_r($generator->getIPs(5));
-   # [0] => xxxx:xxxx:1cb6:2779:c8a2:1215:ed02:7679
-   # [1] => xxxx:xxxx:6c87:4d23:e4e3:cfd4:6906:fe39
-   # [2] => xxxx:xxxx:aeb9:759f:1d75:d153:dd50:3b48
-   # [3] => xxxx:xxxx:09ec:2d23:4570:a57f:7929:dd22
-   # [4] => xxxx:xxxx:56bc:9236:2455:dba5:791f:7d0d
+/*
+    (
+        [0] => ffff:ffff:ecad:7759:29d8:ac05:07b6:56d7
+        [1] => ffff:ffff:4f98:df9f:b796:651e:3bff:f71e
+        [2] => ffff:ffff:8e6f:b966:9f0c:6650:ba59:9ccf
+        [3] => ffff:ffff:2b46:81fb:d078:ad16:06e3:c98e
+        [4] => ffff:ffff:cd95:15f0:111e:4c70:dbfd:64ba
+    )
+ */
 ```
 
 ## License

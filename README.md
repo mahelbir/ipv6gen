@@ -52,4 +52,4 @@ The MIT License (MIT). Please see [License File][link-license] for more informat
 
 [link-packagist]: https://packagist.org/packages/mahelbir/ipv6gen
 
-[link-license]: LISENCE
+[link-license]: LICENSE
